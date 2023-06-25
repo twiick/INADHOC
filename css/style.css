@@ -145,6 +145,7 @@ h3 .orange{
 }
 .hero button{
     width: 276px;
+    text-transform: uppercase;
 }
 .ourservices{
     background: var(--black-2);
@@ -521,6 +522,8 @@ footer.white{
     padding: 20px 30px;
     height: 250px;
     transition: .2s;
+    display: flex;
+    justify-content: space-between;
 }
 .newservices .cards .card .card-info h4{
     width: 200px;
@@ -536,17 +539,101 @@ footer.white{
 }
 .card:hover .card-info{
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: top;
     transition: .2s;
 }
-.card:hover .card-info p{
+.card .card-info p{
     display: none;
     transition: .2s;
+}
+.card:hover .card-info p{
+    display: initial;
+    transition: .2s;
+}
+.card .card-info h4, .card .card-info button{
+    height: 20px;
 }
 .card:hover .card-info h4, .card:hover .card-info button{
     height: 20px;
 }
-.card:hover .card-info button{
+.card .card-info button{
     padding: 0;
+    margin-bottom: 0;
+}
+
+.card:hover .card-info button{
+    margin-bottom: 20px;
+}
+
+
+
+.hero .left-container{
+    position: relative;
+}
+.mini-logo{
+    width: 68px;
+    height: 122px;
+    position: absolute;
+    top: 30%;
+    left: 35%;
+}
+.hero .right-container.right-container-v4 img{
+    width: 119px;
+    height: 38px;
+    position: inherit;
+}
+.hero .right-container.right-container-v4 p{
+    font-size: 15px;
+    font-weight: 500;
+}
+.hero .right-container.right-container-v4 button{
+    font-size: 18px;
+    font-weight: 600;
+}
+.space.profile-v4{
+    width: calc(100% + 100px);
+    height: calc(100%);
+    object-fit: cover;
+}
+.newservices.service-v4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.newservices.service-v4 img{
+    width: 100%;
+}
+.title-h3{
+    text-align: center;
+}
+.projects{
+    width: 100%;
+    position: relative;
+}
+.projects .project{
+    width: 100%;
+    height: 100px;
+    background-color: var(--white);
+    position: absolute;
+}
+.projects .project:nth-child(2){
+    top: 0;
+    clip-path: ellipse(52% 100% at 50% 0%);
+}
+.projects .project:nth-child(3){
+    bottom: 0;
+    clip-path: ellipse(52% 100% at 50% 100%);
+}
+.projects .image-cards{
+    width: 100%;
+    height: 620px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.projects .image-cards div img{
+    width: 100%;
+    height: 620px;
 }
