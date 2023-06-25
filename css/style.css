@@ -295,11 +295,9 @@ footer{
 .header-navbar.white-navbar ul li a{
     color: var(--black);
 }
-
 .header-navbar.white-navbar ul li a.button-type-1{
     color: white;
 }
-
 .hero.home2-hero{
     background-image: none;
     background: var(--white);
@@ -365,7 +363,8 @@ footer{
     height: 860px;
     position: absolute;
     bottom: 0;
-}.ourservices.white{
+}
+.ourservices.white{
     background: var(--white);
 }
 .ourservices.white .experience-1 p:nth-child(2){
@@ -380,17 +379,6 @@ footer{
 .ourservices.white .experience .right-container{
     color: var(--black);
 }
-
-
-
-
-
-
-
-
-
-
-
 .services.services-2{
     background: var(--white);
     height: 600px;
@@ -442,4 +430,123 @@ footer{
 }
 footer.white{
     background: var(--white);
+}
+.hero.home2-hero.home3-hero{
+    background: none;
+    background-image: url(../images/home-hero3.png);
+    background-position: center;
+}
+.hero.home2-hero.home3-hero .left-container{
+    width: 70%;
+    height: 981px;
+}
+.hero.home2-hero.home3-hero .right-container{
+    width: 30%;
+    height: 981px;
+    display: flex;
+    justify-content: center;
+}
+.ourservices.white.version3 .experience .right-container{
+    justify-content: left;
+    padding-left: 0;
+}
+.ourservices.white.version3 .left-container{
+    height: 800px;
+    position: relative;
+}
+.ourservices.white.version3 .experience-1{
+    position: absolute;
+    top: -2857x;
+    right: -100px;
+}
+.ourservices.white.version3 .experience-1 .space{
+    height: 831px;
+    position: absolute;
+    right: 0;
+    top: -105px;
+}
+.ourservices.white.version3 .experience-1 p:nth-child(2){
+    left: -130px;
+}
+.ourservices.white.version3 .experience-1 img:nth-child(3){
+    position: absolute;
+    bottom: 240px;
+    left: 80px;
+}
+.ourservices.white.version3 .experience-text{
+    background-color: var(--orange);
+    color: var(--white);
+    bottom: -10%;
+    left: -50%;
+}
+.ourservices.white.version3 h3{
+    width: 100%;
+    text-align: left;
+    padding: 0 100px;
+    display: flex;
+    flex-direction: column;
+}
+.ourservices.white.version3 h3 span{
+    color: var(--black);
+    font-size: 40px;
+    font-weight: 500;
+    text-align: left;
+}
+.newservices{
+    width: 100%;
+    padding: 100px;
+}
+
+.newservices .cards{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.newservices .cards .card{
+    width: calc(100% / 3);
+    display: flex;
+    flex-direction: column;
+    transition: .2s;
+}
+.card:hover{
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    transition: .2s;
+}
+.newservices .cards .card img{
+    width: 100%;
+    height: 277px;
+    object-fit: cover;
+}
+.newservices .cards .card .card-info{
+    padding: 20px 30px;
+    height: 250px;
+    transition: .2s;
+}
+.newservices .cards .card .card-info h4{
+    width: 200px;
+    color: var(--black);
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    transition: .2s;
+}
+.newservices .cards .card .card-info button{
+    color: var(--black);
+    transition: .2s;
+}
+.card:hover .card-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+    transition: .2s;
+}
+.card:hover .card-info p{
+    display: none;
+    transition: .2s;
+}
+.card:hover .card-info h4, .card:hover .card-info button{
+    height: 20px;
+}
+.card:hover .card-info button{
+    padding: 0;
 }
