@@ -7,13 +7,12 @@
 }
 :root{
     --white: #FFFFFF;
+    --white-40: #FFFFFF40;
     --black: #1E1E1E;
     --black-2: #272727;
     --orange: #F19122;
     --orange-40: #f1902240;
-}
-body{
-    background-color: black;
+    --orange-60: #f1902260;
 }
 /* GENERAL */
 .button-type-1, .button-type-2, .button-type-3{
@@ -43,6 +42,25 @@ body{
     border: none;
     color: var(--white);
     font-size: 30px;
+}
+.button-type-5{
+    background: none;
+    color: orange;
+    border: none;
+    display: flex;
+    align-items: center;
+}
+.button-type-5 span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    color: orange;
+    border: solid 2px var(--orange);
+    border-radius: 50%;
+    padding-left: 4px;
+    margin-right: 20px;
 }
 section{
     padding: 0 100px;
@@ -248,7 +266,6 @@ h3 .orange{
     width: 100%;
     height: 326px;
     padding: 30px;
-    background: rgb(0,0,0);
     background: linear-gradient(0deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%);
     display: flex;
     flex-direction: column;
@@ -274,4 +291,155 @@ footer{
     width: 100%;
     height: 165px;
     background: var(--black-2);
+}
+.header-navbar.white-navbar ul li a{
+    color: var(--black);
+}
+
+.header-navbar.white-navbar ul li a.button-type-1{
+    color: white;
+}
+
+.hero.home2-hero{
+    background-image: none;
+    background: var(--white);
+}
+.hero.home2-hero .left-container{
+    height: 981px;
+    position: relative;
+    justify-content: center;
+}
+.hero.home2-hero h1{
+    font-size: 70px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: var(--black);
+}
+.hero.home2-hero p{
+    width: 319px;
+    color: var(--black);
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.hero.home2-hero .left-container .home-collection{
+    width: calc(100% + 100px);
+    background: var(--orange);
+    position: absolute;
+    padding: 30px 50px 30px 100px;
+    bottom: 0;
+    left: -100px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.hero.home2-hero .left-container .home-collection h3{
+    font-weight: 500;
+    color: white;
+}
+.hero.home2-hero .left-container .home-collection div{
+    width: 100%;
+    height: 3px;
+    background-color: var(--white-40);
+}
+.hero.home2-hero .left-container .home-collection div div{
+    width: 40%;
+    height: 3px;
+    background-color: var(--white);
+}
+.hero.home2-hero .left-container .home-collection p{
+    color: var(--white);
+    font-size: 15px;
+    font-weight: 600;
+}
+.hero.home2-hero .left-container .home-collection span p{
+    font-weight: 500;
+}
+.hero.home2-hero .right-container{
+    position: relative;
+    height: 981px;
+}
+.hero.home2-hero .right-container img{
+    width: 100%;
+    object-fit: cover;
+    height: 860px;
+    position: absolute;
+    bottom: 0;
+}.ourservices.white{
+    background: var(--white);
+}
+.ourservices.white .experience-1 p:nth-child(2){
+    color: var(--orange-60);
+}
+.ourservices.white .experience-text{
+    background-color: var(--white);
+    color: var(--black);
+    bottom: -10%;
+    left: 50%;
+}
+.ourservices.white .experience .right-container{
+    color: var(--black);
+}
+
+
+
+
+
+
+
+
+
+
+
+.services.services-2{
+    background: var(--white);
+    height: 600px;
+    position: relative;
+    align-items: center;
+}
+.services.services-2 div{
+    position: absolute;
+    width: calc(100vw / 3);
+    height: calc(100vw / 3);
+}
+.services.services-2 div:nth-child(1){
+    left: 0;
+}
+.services.services-2 div:nth-child(2){
+    left: 50%;
+    transform: translateX(-50%);
+}
+.services.services-2 div:nth-child(3){
+    right: 0;
+}
+.services.services-2 div img{
+    height: calc(100vw / 3);
+}
+.services.services-2 div{
+    transition: .2s;
+    z-index: 1;
+}
+.services.services-2 div.service:hover{
+    width: calc(140vw / 3);
+    height: calc(140vw / 3);
+    transition: .2s;
+    z-index: 3;
+}
+.services.services-2 div.service:hover img{
+    width: calc(140vw / 3);
+    height: calc(140vw / 3);
+    transition: .2s;
+}
+.services.services-2 div:hover .text{
+    background: linear-gradient(0deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%);
+}
+.services div:hover .text h4{
+    padding-top: 0;
+}
+.services div:hover .text p, .services div:hover .text button{
+    visibility: visible;
+    transition: .2s;
+}
+footer.white{
+    background: var(--white);
 }
